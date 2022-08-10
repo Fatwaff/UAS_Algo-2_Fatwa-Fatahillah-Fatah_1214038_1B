@@ -16,7 +16,7 @@ Buat program yang terkoneksi mysql
 3. Setelah itu pada project greenfoot, klik Tools pada tab bar,  lalu pilih preference. Setelah itu pada User Libraries from config, klik add File dan pilih file jar yang telah di unduh pertama.
 4. Lalu buat class baru dengan klik edit->new class, lalu beri nama Koneksi.
 5. Import library sql dengan import java.sql.*;
-6. Lalu buat variable a dengan tipe data String.
+6. Lalu buat variable x dengan tipe data String.
 7. Pada Constructor buat code untuk get data ke database.
 
         String driver = "com.mysql.cj.jdbc.Driver";
@@ -89,4 +89,3 @@ Buat program yang terkoneksi mysql
         }
 
 Maaf telat mengumpulkan pak🙏
-
