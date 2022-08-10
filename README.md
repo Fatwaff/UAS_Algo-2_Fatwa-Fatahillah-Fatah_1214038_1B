@@ -1,4 +1,4 @@
-# UAS_Algo 2_Fatwa Fatahillah Fatah_1214038_1B
+# (REVISI)UAS_Algo 2_Fatwa Fatahillah Fatah_1214038_1B
 
 Nama : Fatwa Fatahillah Fatah
 
@@ -19,7 +19,7 @@ Buat program yang terkoneksi mysql
 6. Lalu buat variable a dengan tipe data String.
 7. Pada Constructor buat code untuk get data ke database.
 
-String driver = "com.mysql.cj.jdbc.Driver";
+        String driver = "com.mysql.cj.jdbc.Driver";
         String url = "jdbc:mysql://localhost/dbgreenfootuas";
         String user = "root";
         String password = "";
@@ -49,10 +49,10 @@ String driver = "com.mysql.cj.jdbc.Driver";
 
 8. Buat method yang akan me-return nilai dari database.
    
-   public static String sampleMethod()
-    {
-        return x;
-    }
+        public static String sampleMethod()
+        {
+            return x;
+        }
 
 9. Lalu pada class MyWorld membuat objek baru dari class Bee.
 
@@ -60,30 +60,30 @@ String driver = "com.mysql.cj.jdbc.Driver";
 
 11. Lalu pada class Bee, pada method act, ambil data dari Koneksi, set show text dan cek nilainya untuk menentukan arah jalan.
 
-public class Bee extends Actor
-{
-    public void act()
-    {
-        // Add your action code here.
-        
-        Koneksi koneksi = new Koneksi();
-        String s = koneksi.sampleMethod();
-        getWorld().showText("Nilai Dari Database = " + s, 100, 100);
-        checkKeyPress(s);
-        s = String.valueOf(s);
-    }
-    private void checkKeyPress(String s){
-        if (s.equals("w")){
-             setLocation(getX(), getY()-2);
+        public class Bee extends Actor
+        {
+            public void act()
+            {
+                // Add your action code here.
+
+                Koneksi koneksi = new Koneksi();
+                String s = koneksi.sampleMethod();
+                getWorld().showText("Nilai Dari Database = " + s, 100, 100);
+                checkKeyPress(s);
+                s = String.valueOf(s);
+            }
+            private void checkKeyPress(String s){
+                if (s.equals("w")){
+                     setLocation(getX(), getY()-2);
+                }
+                if (s.equals("s")){
+                     setLocation(getX(), getY()+2);
+                }
+                if (s.equals("a")){
+                     setLocation(getX()-2, getY());
+                }
+                if (s.equals("d")){
+                     setLocation(getX()+2, getY());
+                }
+            }
         }
-        if (s.equals("s")){
-             setLocation(getX(), getY()+2);
-        }
-        if (s.equals("a")){
-             setLocation(getX()-2, getY());
-        }
-        if (s.equals("d")){
-             setLocation(getX()+2, getY());
-        }
-    }
-}
