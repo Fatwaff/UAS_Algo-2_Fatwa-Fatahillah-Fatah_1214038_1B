@@ -1,1 +1,0 @@
-memberSearchIndex = [{"p":"<Unnamed>","c":"Bee","l":"act()"},{"p":"<Unnamed>","c":"Bee","l":"Bee()","url":"%3Cinit%3E()"},{"p":"<Unnamed>","c":"Konek","l":"Konek()","url":"%3Cinit%3E()"},{"p":"<Unnamed>","c":"MyWorld","l":"MyWorld()","url":"%3Cinit%3E()"},{"p":"<Unnamed>","c":"MyWorld","l":"prepare()"},{"p":"<Unnamed>","c":"Konek","l":"sampleMethod()"}]
