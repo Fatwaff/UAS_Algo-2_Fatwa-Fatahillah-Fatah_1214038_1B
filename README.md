@@ -1,13 +1,16 @@
 # UAS_Algo 2_Fatwa Fatahillah Fatah_1214038_1B
 
 Nama : Fatwa Fatahillah Fatah
+
 NPM : 1214038
+
 Prodi : D4TI 
+
 Kelas : 1B
 
-Penjelasan UAS
+Penjelasan:
 
-Membuat program yang terkoneksi mysql
+Buat program yang terkoneksi mysql
 1. Pertama unduh library mysql.
 2. Lalu buat program dan database beserta tabelnya. Tabel diberi nama “arah” dan isikan dengan dua kolom yaitu id dan kunci.
 3. Setelah itu pada project greenfoot, klik Tools pada tab bar,  lalu pilih preference. Setelah itu pada User Libraries from config, klik add File dan pilih file jar yang telah di unduh pertama.
@@ -15,6 +18,7 @@ Membuat program yang terkoneksi mysql
 5. Import library sql dengan import java.sql.*;
 6. Lalu buat variable a dengan tipe data String.
 7. Pada Constructor buat code untuk get data ke database.
+
 String driver = "com.mysql.cj.jdbc.Driver";
         String url = "jdbc:mysql://localhost/dbgreenfootuas";
         String user = "root";
@@ -25,8 +29,7 @@ String driver = "com.mysql.cj.jdbc.Driver";
             try{
                 Connection conn = DriverManager.getConnection(url, user, password);
                 Statement stmt = conn.createStatement();
-                ResultSet kunci = stmt.executeQuery(query); 
-                
+                ResultSet kunci = stmt.executeQuery(query);
                 while(kunci.next()){                   
                     x = kunci.getString("kunci");
                 }  
@@ -45,7 +48,8 @@ String driver = "com.mysql.cj.jdbc.Driver";
 
 
 8. Buat method yang akan me-return nilai dari database.
-    public static String sampleMethod()
+   
+   public static String sampleMethod()
     {
         return x;
     }
@@ -54,7 +58,7 @@ String driver = "com.mysql.cj.jdbc.Driver";
 
 10. Lalu tambah kan actor baru, dengan dengan nama Bee.
 
-11.	Lalu pada class Bee, pada method act, ambil data dari Koneksi, set show text dan cek nilainya untuk menentukan arah jalan.
+11. Lalu pada class Bee, pada method act, ambil data dari Koneksi, set show text dan cek nilainya untuk menentukan arah jalan.
 
 public class Bee extends Actor
 {
